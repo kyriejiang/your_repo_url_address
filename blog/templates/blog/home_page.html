@@ -17,7 +17,7 @@
  <h2>Leave a Comment</h2>
  <form action="{% url 'blog:home_page' %}" method="POST">
  {% csrf_token %}
- <input type="text" placeholder="Please Enter Your username" name="username"><br><br>
+ <input type="text" name='username' placeholder="Please Enter Your username"><br><br>
  <textarea name="comment" placeholder="Please Enter Your Comment"></textarea><br>
  <input type="submit" value="Post Me!">
  </form>
